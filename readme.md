@@ -10,7 +10,7 @@
 * Parameter configuration can be done via txt files in `parameter` directory.
 * Dataset should be stored in `dataset` directory.
 	* We assign a unique dataset ID for each dataset. You can freely assign it.
-	* In `input_dataset()` of `util.hpp`, you can freely write codes for reading your dataset.
+	* In `input_data()` of `util.hpp`, you can freely write codes for reading your dataset.
 	* The default file format is `left,right`.
 * Computation time will be stored in `result` directory.
 * Compile: `g++ -O3 -o xxx.out main.cpp`
