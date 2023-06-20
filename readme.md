@@ -12,7 +12,6 @@
 	* We assign a unique dataset ID for each dataset. You can freely assign it.
 	* In `input_data()` of `util.hpp`, you can freely write codes for reading your dataset.
 	* The default file format is `left,right`.
-* Computation time will be stored in `result` directory.
 * Compile: `g++ -O3 -o xxx.out main.cpp`
 * Run: `./xxx.out`
 
