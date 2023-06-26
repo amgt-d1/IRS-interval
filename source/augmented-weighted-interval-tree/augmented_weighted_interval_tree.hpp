@@ -291,27 +291,45 @@ class augmented_weighted_interval_tree
 
         if (_case == 0) // left
         {
-            std::uniform_int_distribution<> rnd_weight(_log->n->left_sorted_weight[_log->left_idx], _log->n->left_sorted_weight[_log->right_idx]);
+            std::uniform_int_distribution<> rnd_weight(0, _log->n->left_sorted_weight[_log->right_idx]);
             auto itr = std::lower_bound(_log->n->left_sorted_weight.begin(), _log->n->left_sorted_weight.end(), rnd_weight(_mt));
             idx = _log->n->left_sorted_idx[std::distance(_log->n->left_sorted_weight.begin(), itr)];
         }
         else if (_case == 1)    // right
         {
-            std::uniform_int_distribution<> rnd_weight(_log->n->right_sorted_weight[_log->left_idx], _log->n->right_sorted_weight[_log->right_idx]);
-            auto itr = std::lower_bound(_log->n->right_sorted_weight.begin(), _log->n->right_sorted_weight.end(), rnd_weight(_mt));
-            idx = _log->n->right_sorted_idx[std::distance(_log->n->right_sorted_weight.begin(), itr)];
+            if (_log->left_idx > 0)
+            {
+                std::uniform_int_distribution<> rnd_weight(_log->n->right_sorted_weight[_log->left_idx - 1], _log->n->right_sorted_weight[_log->right_idx]);
+                auto itr = std::lower_bound(_log->n->right_sorted_weight.begin(), _log->n->right_sorted_weight.end(), rnd_weight(_mt));
+                idx = _log->n->right_sorted_idx[std::distance(_log->n->right_sorted_weight.begin(), itr)];
+            }
+            else
+            {
+                std::uniform_int_distribution<> rnd_weight(0, _log->n->right_sorted_weight[_log->right_idx]);
+                auto itr = std::lower_bound(_log->n->right_sorted_weight.begin(), _log->n->right_sorted_weight.end(), rnd_weight(_mt));
+                idx = _log->n->right_sorted_idx[std::distance(_log->n->right_sorted_weight.begin(), itr)];
+            }
         }
         else if (_case == 2)    // augmented_left
         {
-            std::uniform_int_distribution<> rnd_weight(_log->n->augmented_left_sorted_weight[_log->left_idx], _log->n->augmented_left_sorted_weight[_log->right_idx]);
+            std::uniform_int_distribution<> rnd_weight(0, _log->n->augmented_left_sorted_weight[_log->right_idx]);
             auto itr = std::lower_bound(_log->n->augmented_left_sorted_weight.begin(), _log->n->augmented_left_sorted_weight.end(), rnd_weight(_mt));
             idx = _log->n->augmented_left_sorted_idx[std::distance(_log->n->augmented_left_sorted_weight.begin(), itr)];
         }
         else    // augmented_right
         {
-            std::uniform_int_distribution<> rnd_weight(_log->n->augmented_right_sorted_weight[_log->left_idx], _log->n->augmented_right_sorted_weight[_log->right_idx]);
-            auto itr = std::lower_bound(_log->n->augmented_right_sorted_weight.begin(), _log->n->augmented_right_sorted_weight.end(), rnd_weight(_mt));
-            idx = _log->n->augmented_right_sorted_idx[std::distance(_log->n->augmented_right_sorted_weight.begin(), itr)];
+            if (_log->left_idx > 0)
+            {
+                std::uniform_int_distribution<> rnd_weight(_log->n->augmented_right_sorted_weight[_log->left_idx - 1], _log->n->augmented_right_sorted_weight[_log->right_idx]);
+                auto itr = std::lower_bound(_log->n->augmented_right_sorted_weight.begin(), _log->n->augmented_right_sorted_weight.end(), rnd_weight(_mt));
+                idx = _log->n->augmented_right_sorted_idx[std::distance(_log->n->augmented_right_sorted_weight.begin(), itr)];
+            }
+            else
+            {
+                std::uniform_int_distribution<> rnd_weight(0, _log->n->augmented_right_sorted_weight[_log->right_idx]);
+                auto itr = std::lower_bound(_log->n->augmented_right_sorted_weight.begin(), _log->n->augmented_right_sorted_weight.end(), rnd_weight(_mt));
+                idx = _log->n->augmented_right_sorted_idx[std::distance(_log->n->augmented_right_sorted_weight.begin(), itr)];
+            }
         }
 
         return idx;
