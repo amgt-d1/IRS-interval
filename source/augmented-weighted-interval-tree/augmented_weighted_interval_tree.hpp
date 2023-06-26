@@ -206,7 +206,8 @@ class augmented_weighted_interval_tree
                 _log._case = 1;
                 _log.right_idx = n->right_sorted_val.size() - 1;
                 _log.left_idx = distance;
-                _log.weight = n->right_sorted_weight[_log.right_idx] - n->right_sorted_weight[distance];
+                _log.weight = n->right_sorted_weight[_log.right_idx];
+                if (distance > 0) _log.weight -= n->right_sorted_weight[distance - 1];
 
                 // store candidate
                 candidate.push_back(_log);
@@ -246,7 +247,8 @@ class augmented_weighted_interval_tree
                     _log._case = 3;
                     _log.right_idx = left_child->augmented_right_sorted_val.size() - 1;
                     _log.left_idx = distance;
-                    _log.weight = left_child->augmented_right_sorted_weight[_log.right_idx] - left_child->augmented_right_sorted_weight[distance];
+                    _log.weight = left_child->augmented_right_sorted_weight[_log.right_idx];
+                    if (distance > 0) _log.weight -= left_child->augmented_right_sorted_weight[distance - 1];
                     
                     // store candidate
                     candidate.push_back(_log);
