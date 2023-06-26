@@ -205,14 +205,18 @@ class domain_augmented_weighted_interval_tree
             /* current node check */
             /**********************/
             node_log _log;
-            _log.n = n;
-            _log._case = 0;
-            _log.left_idx = 0;
-            _log.right_idx = n->left_sorted_val.size() - 1; // all intervals overlapping the median overlaps the query
-            _log.weight = n->left_sorted_weight[_log.right_idx];
+            
+            if (n->left_sorted_val.size() > 0)
+            {
+                _log.n = n;
+                _log._case = 0;
+                _log.left_idx = 0;
+                _log.right_idx = n->left_sorted_val.size() - 1; // all intervals overlapping the median overlaps the query
+                _log.weight = n->left_sorted_weight[_log.right_idx];
 
-            // store candidate
-            candidate.push_back(_log);
+                // store candidate
+                candidate.push_back(_log);
+            }
 
             /*******************/
             /* left node check */
