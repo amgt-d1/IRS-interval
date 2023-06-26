@@ -167,6 +167,7 @@ class domain_augmented_weighted_interval_tree
                 _log._case = 0;
                 _log.left_idx = 0;
                 _log.right_idx = distance;
+                _log.weight = n->left_sorted_weight[distance];
 
                 // store candidate
                 candidate.push_back(_log);
@@ -188,6 +189,8 @@ class domain_augmented_weighted_interval_tree
                 _log._case = 1;
                 _log.right_idx = n->right_sorted_val.size() - 1;
                 _log.left_idx = distance;
+                _log.weight = n->right_sorted_weight[_log.right_idx];
+                if (distance > 0) _log.weight -= n->right_sorted_weight[distance - 1];
 
                 // store candidate
                 candidate.push_back(_log);
@@ -206,6 +209,9 @@ class domain_augmented_weighted_interval_tree
             _log._case = 0;
             _log.left_idx = 0;
             _log.right_idx = n->left_sorted_val.size() - 1; // all intervals overlapping the median overlaps the query
+            _log.weight = n->left_sorted_weight[_log.right_idx];
+
+            // store candidate
             candidate.push_back(_log);
 
             /*******************/
@@ -224,6 +230,10 @@ class domain_augmented_weighted_interval_tree
                     _log._case = 3;
                     _log.right_idx = left_child->augmented_right_sorted_val.size() - 1;
                     _log.left_idx = distance;
+                    _log.weight = left_child->augmented_right_sorted_weight[_log.right_idx];
+                    if (distance > 0) _log.weight -= left_child->augmented_right_sorted_weight[distance - 1];
+                    
+                    // store candidate
                     candidate.push_back(_log);
                 }
             }
@@ -245,6 +255,9 @@ class domain_augmented_weighted_interval_tree
                     _log._case = 2;
                     _log.left_idx = 0;
                     _log.right_idx = distance;
+                    _log.weight = right_child->augmented_left_sorted_weight[distance];
+
+                    // store candidate
                     candidate.push_back(_log);
                 }
             }
@@ -366,7 +379,7 @@ public:
 
             // building an alias structure
             std::vector<unsigned int> arr;
-            for (unsigned int i = 0; i < candidate.size(); ++i) arr.push_back(candidate[i].right_idx - candidate[i].left_idx + 1);
+            for (unsigned int i = 0; i < candidate.size(); ++i) arr.push_back(candidate[i].weight);
             alias a(arr);
 
             // sampling a node
