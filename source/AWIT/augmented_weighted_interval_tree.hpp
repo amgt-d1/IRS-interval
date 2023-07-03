@@ -392,7 +392,7 @@ public:
         compute_candidates(query, &nodes[0], candidate);
 
         std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
-        time_range_search = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() / 1000;
+        time_range_search = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
         time_range_search_average += time_range_search;
       
         // sum result size
