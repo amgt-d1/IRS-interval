@@ -153,30 +153,6 @@ void input_data()
             if (i == 1) interval.second = (unsigned int)val;
         }
 
-        // error check & swap
-        // if (interval.first > interval.second)
-        // {
-        //     std::cout << " error!\t" << interval.first << ", " << interval.second << "\n";
-        //     unsigned int tmp = interval.second;
-        //     interval.second > interval.first;
-        //     interval.first = tmp;
-        // }
-
-        // bool f = 0;
-        // if (interval.first < interval.second) f = 1;
-        // if (dataset_id == 4)
-        // {
-        //     if (interval.first < 1570000000 || interval.second > 1594000000) f = 0;
-        // }
-
-        // // insert into dataset
-        // if (f)
-        // {
-        //     if (domain_max < interval.second) domain_max = interval.second;
-        //     if (domain_min > interval.first) domain_min = interval.first;
-        //     if (rnd_prob(mt) <= scalability) intervals.push_back(interval);
-        // }
-
         if (interval.first < interval.second)
         {
             if (domain_max < interval.second) domain_max = interval.second;
