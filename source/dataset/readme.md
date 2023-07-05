@@ -12,5 +12,6 @@ Unzip the corresponding zip files.
 
 ## Bike and Taxi
 Due the size limitation of GitHub, Bike and Taxi cannot be uploaded as a single file.  
-Therefore, please unzip the splited files and merge them.
-* For Bike, the mergeed file should be rename as `nyc_bike_unixtime.csv`.
+Therefore, please merge the splited files to a single file.
+* For Bike, the mergeed file should be renamed as `nyc_bike_unixtime.csv`.
+* For Taxi, the mergeed file should be renamed as `nyc_taxi.csv`.
