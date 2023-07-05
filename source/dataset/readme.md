@@ -1,8 +1,8 @@
 ## How to use
 We used the follwoing datasets.
-* Bike (dataset_id = 2)
-* Book (dataset_id = 0)
-* BTC (dataset_id = 1)
+* [Bike](https://www.kaggle.com/datasets/roundedup/new-york-citi-bike-trip-duration) (dataset_id = 2)
+* [Book](https://github.com/pbour/hint) (dataset_id = 0)
+* [BTC](https://www.kaggle.com/datasets/swaptr/bitcoin-historical-data) (dataset_id = 1)
 * Taxi (dataset_id = 3)
 
 Bike, BTC, and Taxi are from [Kaggle](https://www.kaggle.com/datasets), whereas Book is from [here](https://github.com/pbour/hint).
