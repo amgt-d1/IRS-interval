@@ -1,3 +1,4 @@
+## How to use
 We used the follwoing datasets.
 * Bike (dataset_id = 2)
 * Book (dataset_id = 0)
@@ -6,4 +7,8 @@ We used the follwoing datasets.
 
 Bike, BTC, and Taxi are from [Kaggle](https://www.kaggle.com/datasets), whereas Book is from [here](https://github.com/pbour/hint).
 
-Due the size limitation of GitHub, Bike and Taxi cannot be uploaded.
+## Book and BTC
+Unzip the corresponding zip files.
+
+## Bike and Taxi
+Due the size limitation of GitHub, Bike and Taxi cannot be uploaded as a single file.
