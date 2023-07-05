@@ -6,4 +6,4 @@ We used
 
 Bike, BTC, and Taxi are from [Kaggle](https://www.kaggle.com/datasets), whereas Book is from [here](https://github.com/pbour/hint).
 
-Due the size limitation of GitHub, Bike and BTC cannot be uploadas as a single file.
+Due the size limitation of GitHub, Bike and BTC cannot be uploaded.
