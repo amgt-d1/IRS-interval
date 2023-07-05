@@ -1,4 +1,4 @@
-We used
+We used the follwoing datasets.
 * Bike (dataset_id = 2)
 * Book (dataset_id = 0)
 * BTC (dataset_id = 1)
