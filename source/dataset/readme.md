@@ -11,4 +11,6 @@ Bike, BTC, and Taxi are from [Kaggle](https://www.kaggle.com/datasets), whereas 
 Unzip the corresponding zip files.
 
 ## Bike and Taxi
-Due the size limitation of GitHub, Bike and Taxi cannot be uploaded as a single file.
+Due the size limitation of GitHub, Bike and Taxi cannot be uploaded as a single file.  
+Therefore, please unzip the splited files and merge them.
+* For Bike, the mergeed file should be rename as `nyc_bike_unixtime.csv`.
