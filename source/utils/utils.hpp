@@ -123,8 +123,8 @@ void input_data()
     std::string f_name = "../dataset/";
     if (dataset_id == 0) f_name += "books.csv";
     if (dataset_id == 1) f_name += "BTC.csv";
-    if (dataset_id == 2) f_name += "nyc_bike_unixtime.csv";
-    if (dataset_id == 3) f_name += "nyc_taxi.csv";
+    if (dataset_id == 2) f_name += "renfe.csv";
+    if (dataset_id == 3) f_name += "taxi.csv";
 
     // file input
     std::ifstream ifs_file(f_name);
