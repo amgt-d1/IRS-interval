@@ -9,5 +9,5 @@ We used the follwoing datasets.
 ## Book and BTC
 Unzip the corresponding zip files.
 
-## Bike and Taxi
-Due the size limitation of GitHub, Renfe and Taxi cannot be uploaded.  
+## Renfe and Taxi
+Due to the size limitation of GitHub, Renfe and Taxi cannot be uploaded.  
