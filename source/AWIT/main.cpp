@@ -27,9 +27,6 @@ void test_query()
     time_range_search_average /= (query_size * 1000);
     time_range_sampling_average /= (query_size * 1000);
     std::cout << " Average IRS time: " << time_total_aggregate << "[microsec]\t Throughput: " << 1.0 / (time_total_aggregate / 1000000) << "[queries/sec]\n";
-    
-    result_size_aggregate /= query_size;
-    std::cout << " Average #nodes accessed: " << result_size_aggregate << "\n\n";
 }
 
 
