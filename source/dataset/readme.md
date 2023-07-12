@@ -3,7 +3,7 @@ We used the follwoing datasets.
 * [Book](https://github.com/pbour/hint) (dataset_id = 0)
 * [BTC](https://www.kaggle.com/datasets/swaptr/bitcoin-historical-data) (dataset_id = 1)
 * [Renfe](https://www.kaggle.com/datasets/thegurusteam/spanish-high-speed-rail-system-ticket-pricing) (dataset_id = 2)
-* [Taxi](https://www.kaggle.com/datasets/microize/newyork-yellow-taxi-trip-data-2020-2019) (dataset_id = 3)
+* [Taxi](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) (dataset_id = 3)
 
 
 ## Book and BTC
