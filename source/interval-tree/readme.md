@@ -4,4 +4,4 @@
 
 ## Note
 * If you want to test non-weighted cases, use `test_uniform()`.
- If you want to test weighted cases, use `test_weighted()`.
+* If you want to test weighted cases, use `test_weighted()`.
