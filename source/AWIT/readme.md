@@ -1,3 +1,3 @@
 ## How to use
-* Compile: `g++ -O3 -o aitv.out main.cpp`
-* Run: `./aitv.out`
+* Compile: `g++ -O3 -o awit.out main.cpp`
+* Run: `./awit.out`
