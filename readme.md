@@ -13,9 +13,6 @@
 	* In `input_data()` of `utils.hpp`, you can freely write codes for reading your dataset.
 	* The default file format is `left,right`.
     * For example, if you want to test on [Book](https://github.com/pbour/hint) and [BTC](https://www.kaggle.com/datasets), `dataset_id = 0` and `dataset_id = 1`, respectively in `parameter` directory.
-* Compile: `g++ -O3 -o xxx.out main.cpp`
-* Run: `./xxx.out`
-
 
 ## Citation
 If you use our implementation, please cite the following paper.
