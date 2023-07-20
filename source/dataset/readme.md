@@ -8,7 +8,10 @@ We used the follwoing datasets.
 
 
 ## Book and BTC
-Unzip the corresponding zip files.
+Unzip the corresponding zip files and put the dataset file on this directory.
 
 ## Renfe and Taxi
 Due to the size limitation of GitHub, Renfe and Taxi cannot be uploaded.  
+
+## Note
+_norm datasets are for HINT.
