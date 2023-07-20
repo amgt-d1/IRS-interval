@@ -9,7 +9,7 @@
 ## Compile
 Compile using ```make all```
 
-## HINT<sup>m</sup>: 
+## HINT<sup>m</sup>
 
 #### Source code files
 - main_hint_m.cpp
@@ -33,7 +33,6 @@ Compile using ```make all```
 
 #### Execution
 - ##### Examples
-    ###### all optimizations  (only bottom-up)
     ```
     $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/BTC_norm.dat ../queryset/id-1_extent-0.08.qry
     ```
