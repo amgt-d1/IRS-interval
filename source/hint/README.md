@@ -11,7 +11,7 @@ Compile using ```make all```
 
 ## HINT<sup>m</sup>
 
-#### Source code files
+### Source code files
 - main_hint_m.cpp
 - containers/relation.h
 - containers/relation.cpp
@@ -31,7 +31,7 @@ Compile using ```make all```
 - indices/hint_m_subs+sort+ss+cm.cpp
 - indices/hint_m_all.cpp
 
-#### Execution
+### Execution
 - ##### Examples
     ```
     $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/BTC_norm.dat ../queryset/id-1_extent-0.08.qry
