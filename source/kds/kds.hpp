@@ -428,9 +428,6 @@ public:
         // std::cout << " IRS time: " << time_range_sampling << "[microsec]\n";
         
         time_total_aggregate += (time_range_sampling + time_range_search);
-
-        // output query performance
-        output_result(1);
     }    
 
     // range counting
@@ -447,8 +444,5 @@ public:
         time_total_aggregate += time_range_search;
 
         result_size = _result_size;
-
-        // output query performance
-        output_result(1);
     }
 };
