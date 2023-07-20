@@ -53,13 +53,7 @@ Compile using ```make all``` or ```make <option>``` where `<option>` can be one 
 
 - ##### Examples
     ###### all optimizations  (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS samples/AARHUS-BOOKS_2013.dat ../queryset/id-0_extent-0.08.qry
+    ```
     $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/BTC_norm.dat ../queryset/id-1_extent-0.08.qry
-    $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/nyc_bike_unixtime_norm.dat ../queryset/id-2_extent-0.08.qry
-    $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/taxi_ecml_norm.dat ../queryset/id-3_extent-0.08.qry
-
-    $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS ../dataset/books_norm-0.2.dat ../queryset/id-0_extent-0.08_scalability-0.2.qry
     ```
 
