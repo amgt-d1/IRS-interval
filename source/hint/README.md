@@ -1,4 +1,6 @@
-# This is folked from [here](https://github.com/pbour/hint)
+## Note
+* This is folked from [here](https://github.com/pbour/hint)
+* To obtain query intervals, activate `output_query()` in another algorithm directory (e.g., interval tree).
 
 ## Dependencies
 - g++/gcc
