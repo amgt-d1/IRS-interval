@@ -7,20 +7,7 @@
 - Boost Library 
 
 ## Compile
-Compile using ```make all``` or ```make <option>``` where `<option>` can be one of the following:
-   - lscan 
-   - 1dgrid 
-   - hint
-   - hint_m 
-
-## Shared parameters among all methods
-| Parameter | Description | Comment |
-| ------ | ------ | ------ |
-| -? or -h | display help message | |
-| -v | activate verbose mode; print the trace for every query; otherwise only the final report is displayed | |
-| -q | set predicate type:<br>(1) basic relationships from Allen's algebra, "EQUALS", "STARTS", "STARTED", "FINISHES", "FINISHED", "MEETS", "MET", "OVERLAPS", "OVERLAPPED", "CONTAINS", "CONTAINED", "BEFORE" "AFTER"<br>(2) generalized overlaps, "gOVERLAPS", from ACM SIGMOD'22 publication  | basic predicates work only for the linear scan method, 1D-grid and for the most advanced HINT<sup>m</sup> variants, with SUBS+SORT+SS+CM or ALL optimizations; rest of the methods return 0 |
-| -r | set the number of runs per query; by default 1 | in our experimental analysis set to 10 |
-
+Compile using ```make all```
 
 ## HINT<sup>m</sup>: 
 
