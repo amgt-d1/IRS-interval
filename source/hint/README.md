@@ -32,12 +32,6 @@ Compile using ```make all```
 - indices/hint_m_all.cpp
 
 #### Execution
-| Extra parameter | Description | Comment |
-| ------ | ------ | ------ |
-| -m |  set the number of bits | 10 for BOOKS in the experiments |
-| -o |  set optimizations to be used: "SUBS+SORT" or "SUBS+SOPT" or "SUBS+SORT+SOPT" or "SUBS+SORT+SOPT+SS" or "SUBS+SORT+SOPT+CM" or "SUBS+SORT+SS+CM" or "ALL"| omit parameter for base HINT<sup>m</sup>; "CM" for cache misses optimization |
-| -t |  evaluate query traversing the hierarchy in a top-down fashion; by default the bottom-up strategy is used | currently supported only by base HINT<sup>m</sup> |
-
 - ##### Examples
     ###### all optimizations  (only bottom-up)
     ```
