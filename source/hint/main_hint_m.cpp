@@ -401,10 +401,7 @@ int main(int argc, char **argv)
     time_total_aggregate *= 1000000;
     result_size_aggregate = totalResult / numQueries;
     selectivity = result_size_aggregate / R.size();
-    
-    // output average performance
-    output_result(0);
-    
+        
     
     return 0;
 }
