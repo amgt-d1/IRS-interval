@@ -52,39 +52,6 @@ Compile using ```make all``` or ```make <option>``` where `<option>` can be one 
 | -t |  evaluate query traversing the hierarchy in a top-down fashion; by default the bottom-up strategy is used | currently supported only by base HINT<sup>m</sup> |
 
 - ##### Examples
-
-    ###### base with top-down
-    ```sh
-    $ ./query_hint_m.exec -m 10 -t -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### base with bottom-up
-    ```sh
-    $ ./query_hint_m.exec -m 10 -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sort (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sort -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sopt (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sopt -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sort+sopt (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sort+sopt -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sort+sopt+ss (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sort+sopt+ss -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sort+sopt+cm (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sort+sopt+cm -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
-    ###### subs+sort+ss+cm optimizations  (only bottom-up)
-    ```sh
-    $ ./query_hint_m.exec -m 10 -o subs+sort+sopt+cm -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
-    ```
     ###### all optimizations  (only bottom-up)
     ```sh
     $ ./query_hint_m.exec -m 10 -o all -q gOVERLAPS -r 10 samples/AARHUS-BOOKS_2013.dat samples/AARHUS-BOOKS_2013_20k.qry
