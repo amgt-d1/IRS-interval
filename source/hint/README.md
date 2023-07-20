@@ -1,6 +1,7 @@
 ## Note
 * This is forked from [here](https://github.com/pbour/hint)
     * We extended the original code so that HINT<sup>m</sup> maintains all intervals overlapping a given query interval.
+    * We measured only candidate computation time, as the sampling operation is totally the same as that of interval tree.
 * To obtain query intervals, activate `output_query()` in another algorithm directory (e.g., interval tree).
 
 ## Dependencies
