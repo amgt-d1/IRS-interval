@@ -17,7 +17,13 @@
 ## Citation
 If you use our implementation, please cite the following paper.
 ``` 
-
+@inproceedings{amagata2024independent,  
+    title={Independent Range Sampling on Interval Data},  
+    author={Amagata, Daichi},  
+    booktitle={ICDE},  
+    pages={xx--xx},  
+    year={2024}  
+}
 ``` 
 
 ## License
