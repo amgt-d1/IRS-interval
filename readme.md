@@ -21,7 +21,7 @@ If you use our implementation, please cite the following paper.
     title={Independent Range Sampling on Interval Data},  
     author={Amagata, Daichi},  
     booktitle={ICDE},  
-    pages={xx--xx},  
+    pages={449-461},  
     year={2024}  
 }
 ``` 
