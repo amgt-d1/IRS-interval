@@ -12,7 +12,11 @@
 	* We assign a unique dataset ID for each dataset. You can freely assign it.
 	* In `input_data()` of `utils.hpp`, you can freely write codes for reading your dataset.
 	* The default file format is `left,right`.
-    * For example, if you want to test on Book and BTC, `dataset_id = 0` and `dataset_id = 1`, respectively in `parameter` directory.
+   	* For example, if you want to test on Book and BTC, `dataset_id = 0` and `dataset_id = 1`, respectively in `parameter` directory.
+* Execution
+	* Compile: g++ -O3 -o xxx.out main.cpp
+ 	* Run: ./xxx.out
+	* Note: xxx can be arbitrary.
 
 ## Citation
 If you use our implementation, please cite the following paper.
