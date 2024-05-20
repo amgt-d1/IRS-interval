@@ -14,9 +14,7 @@
 	* The default file format is `left,right`.
    	* For example, if you want to test on Book and BTC, `dataset_id = 0` and `dataset_id = 1`, respectively in `parameter` directory.
 * Execution
-	* Compile: g++ -O3 -o xxx.out main.cpp
- 	* Run: ./xxx.out
-	* Note: xxx can be arbitrary.
+	* See the directory of each algorithm.
 
 ## Citation
 If you use our implementation, please cite the following paper.
