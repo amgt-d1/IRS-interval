@@ -2,6 +2,7 @@
 * This repository provides implementations of our algorithms for the IRS problem on interval data.
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/amgt-d1/IRS-interval/blob/main/license.txt)
+[![downloads](https://img.shields.io/npm/dt/[https://github.com/amgt-d1/IRS-interval].svg)]
 
 ## Requirement
 * Linux OS (Ubuntu).
