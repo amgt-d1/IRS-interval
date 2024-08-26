@@ -3,6 +3,7 @@
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/amgt-d1/IRS-interval/blob/main/license.txt)
 [![Downloads](https://img.shields.io/github/downloads/amgt-d1/IRS-interval/total.svg)](https://github.com/amgt-d1/IRS-interval/releases/)
+![](https://api.visitorbadge.io/api/VisitorHit?user=matchyc&repo=IRS-interval&countColor=%237B1E7A)
 
 ## Requirement
 * Linux OS (Ubuntu).
