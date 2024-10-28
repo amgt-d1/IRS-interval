@@ -1,5 +1,6 @@
 ## Introduction
 * This repository provides implementations of our algorithms for the IRS problem on interval data.
+* For detail, please see our [paper](https://ieeexplore.ieee.org/abstract/document/10597989). A longer version is [here](https://arxiv.org/abs/2405.08315).
 
 ![](https://api.visitorbadge.io/api/VisitorHit?user=matchyc&repo=IRS-interval&countColor=%237B1E7A)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/amgt-d1/IRS-interval/blob/main/license.txt)
